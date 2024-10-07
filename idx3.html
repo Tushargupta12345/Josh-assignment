@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add skills</title>
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 400px;
+        }
+        .domain-label {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .input-field {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .skills-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .skills, .proficiency {
+            width: 48%;
+        }
+        .skills label, .proficiency label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .skills input, .proficiency input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: white;
+        }
+        .save-button {
+            background-color: #4CAF50; /* Green */
+        }
+        .cancel-button {
+            background-color: #f44336; /* Red */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="domain-label">Domain</div>
+    <input type="text" class="input-field" placeholder="Enter domain name">
+
+    <div class="skills-container">
+        <div class="skills">
+            <label>Skills</label>
+            <input type="text" placeholder="Skill 1">
+            <input type="text" placeholder="Skill 2">
+            <input type="text" placeholder="Skill 3">
+            <input type="text" placeholder="Skill 4">
+        </div>
+        <div class="proficiency">
+            <label>Proficiency</label>
+            <input type="text" placeholder="Proficiency 1">
+            <input type="text" placeholder="Proficiency 2">
+            <input type="text" placeholder="Proficiency 3">
+            <input type="text" placeholder="Proficiency 4">
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="button save-button">Save</button>
+        <button class="button cancel-button">Cancel</button>
+    </div>
+</div>
+
+</body>
+</html>
